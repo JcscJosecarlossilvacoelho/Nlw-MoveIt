@@ -29,9 +29,9 @@ const Login: React.FC = () => {
           <title>Inicio / Move.it</title>
         </Head>
         <section>
-          <img src='/Simbolo.svg'></img>
+          <img className="background_image" src='/Simbolo.svg'></img>
           <div>
-            <img className="background_image" src='/Logo.svg'></img>
+            <img  src='/Logo.svg'></img>
             <h2>Bem-Vindo</h2>
             <div className="gitHub">
               <img src="/icons/Github.svg" alt="Github"></img>
