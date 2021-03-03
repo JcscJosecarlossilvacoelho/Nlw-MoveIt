@@ -38,10 +38,10 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 - **yarn install**
 - **yarn dev**
 
-## 🖼️ Imagen do Projeto
+## 🖼️ Imagem do Projeto
 
 <h1 align="center">
-  <img alt="moveit" title="moveit" src="public/2021-03-03_12h01_42.png" width="220px" />
+  <img alt="moveit" title="moveit" src="public/2021-03-03_12h01_42.png" width="420px" />
 </h1>
 
 
