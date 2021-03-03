@@ -18,7 +18,7 @@ export const Container = styled.div`
         justify-content:center;
         & > img{
                  height: 4rem;
-                 width:1rem;
+                 width:20rem;
           }
         h2{
             font-size:2.25rem;
