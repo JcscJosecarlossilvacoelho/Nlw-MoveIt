@@ -34,9 +34,9 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🌏 Como Iniciar o projeto
 
-- **[git clone https://github.com/JcscJosecarlossilvacoelho/Nlw-MoveIt.git]**
-- **[yarn install]**
-- **[yarn dev]**
+- **git clone https://github.com/JcscJosecarlossilvacoelho/Nlw-MoveIt.git**
+- **yarn install**
+- **yarn dev**
 
 ## 🖊️ Licença
 
