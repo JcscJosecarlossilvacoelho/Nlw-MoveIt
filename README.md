@@ -33,7 +33,9 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 
 ## 🌏 Como Iniciar o projeto
-
+  **DEMO PROJETO**
+   https://moveit-jcscjosecarlossilvacoelho.vercel.app/
+  
 - **git clone https://github.com/JcscJosecarlossilvacoelho/Nlw-MoveIt.git**
 - **yarn install**
 - **yarn dev**
