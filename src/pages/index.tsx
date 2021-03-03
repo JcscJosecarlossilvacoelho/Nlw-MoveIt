@@ -31,7 +31,7 @@ const Login: React.FC = () => {
         <section>
           <img src='/Simbolo.svg'></img>
           <div>
-            <img src='/Logo.svg'></img>
+            <img className="background_image" src='/Logo.svg'></img>
             <h2>Bem-Vindo</h2>
             <div className="gitHub">
               <img src="/icons/Github.svg" alt="Github"></img>
