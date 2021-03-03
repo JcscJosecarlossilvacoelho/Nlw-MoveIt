@@ -40,8 +40,8 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🖼️ Imagem do Projeto
 
-<h1 align="center">
-  <img alt="moveit" title="moveit" src="public/2021-03-03_12h01_42.png" width="420px" />
+<h1 >
+  <img alt="moveit" title="moveit" src="public/2021-03-03_12h01_42.png" width="620px" />
 </h1>
 
 
