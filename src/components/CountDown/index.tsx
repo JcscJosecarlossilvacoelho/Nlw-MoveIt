@@ -1,37 +1,22 @@
-import { useState , useEffect } from 'react';
+import { useState , useEffect, useContext } from 'react';
 import { Container,Button } from './styles';
 import { AiFillCheckCircle } from "react-icons/ai";
 import theme from '../../styles/theme';
-let countdownTimeout : NodeJS.Timeout;
+import { CountdownContext } from '../../contexts/CountdownContext';
 
 const CountDown: React.FC = () => {
-  const [time,setTime] = useState(0.1 * 60)
-  const [isActive,setIsActive] = useState(false)
-  const [hasFinished,setHasFinished] = useState(false)
-  const minutes = Math.floor(time / 60);
-  const seconds = time % 60;
-
+  const {
+      hasFinished,
+      seconds,
+      minutes,
+      startCountdown,
+      resetCountdown,
+      isActive
+  } = useContext(CountdownContext);
+  
   const [minuteLeft,minuteRigth] = String(minutes).padStart(2,'0').split('');
   const [secondLeft,secondRigth] = String(seconds).padStart(2,'0').split('');
 
-  const startCountdown = () => {
-    setIsActive(true)
-  }
-  const resetCountdown = () => {
-       clearTimeout(countdownTimeout)
-       setIsActive(false)
-       setTime(0.1*60)
-  }
-  useEffect(()=>{
-        if(isActive && time > 0){
-         countdownTimeout = setTimeout(() => {
-                setTime(time - 1)
-          }, 1000);
-        }else if(isActive && time === 0){
-            setIsActive(false)
-            setHasFinished(true)
-        }
-  },[isActive,time])
   return (
    <>
    <Container>

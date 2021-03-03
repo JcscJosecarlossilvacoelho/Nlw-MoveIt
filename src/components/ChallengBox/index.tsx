@@ -1,21 +1,35 @@
+import { useContext } from 'react';
+import { ChallengesContext } from '../../contexts/ChallengesContext';
+import { CountdownContext } from '../../contexts/CountdownContext';
+
 import { Container ,ChallengNotActive,ChallengActive } from './styles';
 
 const ChallengBox: React.FC = () => {
-    const hasActiveChalleng = true;
+  const {activeChallenge,resetChallenge,completedChallenge} = useContext(ChallengesContext);
+  const {resetCountdown} = useContext(CountdownContext);
+  
+  const handleChallengSucceded = () => {
+    completedChallenge();
+    resetCountdown()
+  }
+const handleFailedSucceded = () => {
+      resetChallenge();
+      resetCountdown();
+  }
   return <Container>
-      {hasActiveChalleng ? (
+      {activeChallenge ? (
             <ChallengActive>
-                <header>Ganhe 400px</header>
+                <header>Ganhe {activeChallenge.amount} px</header>
                 <main>
-                    <img src="icons/body.svg"></img>
+                    <img src={`icons/${activeChallenge.type}.svg`}></img>
                     <strong>Novo desafio</strong>
-                    <p>Qualquer coisa</p>
+                    <p>{activeChallenge.description}</p>
                 </main>
                 <footer>
-                    <button type="button" >
+                    <button onClick={()=>handleFailedSucceded()} type="button" >
                       Falhei
                     </button>
-                    <button type="button" >
+                    <button onClick={()=>handleChallengSucceded()} type="button" >
                         Completei
                     </button>
                 </footer>

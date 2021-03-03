@@ -1,12 +1,22 @@
+import { useContext } from "react";
+import { ChallengesContext } from "../../contexts/ChallengesContext";
 import { Container } from "./styles";
-const Profile: React.FC = () => {
+
+interface ProfileProps {
+  username:string,
+  avatar:string,
+}
+const Profile: React.FC<ProfileProps> = ({avatar,username} : ProfileProps) => {
+  const {level} = useContext(ChallengesContext);
+
+
   return <Container className="flex items-center ">
-    <img  src="https://avatars.githubusercontent.com/u/44404484?s=60&v=4"></img>
+    <img  src={avatar}></img>
     <div  >
-      <strong >José Coelho</strong>
+      <strong >{username}</strong>
       <p>
         <img  src="icons/level.svg" alt="Level"></img>
-        Level 1
+        Level {level}
       </p>
     </div>
   </Container>
