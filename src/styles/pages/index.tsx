@@ -9,7 +9,7 @@ export const Container = styled.div`
     display:grid;
     grid-template-columns: 1fr 1fr;
     align-content:center;
-    & > img{
+   .background_image{
                  height: 100vh;
           }
     & > div {
