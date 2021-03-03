@@ -31,6 +31,13 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 - **[NextJS](https://sass-lang.com/documentation/syntax)**
 - **[Styled-Compoents](https://sass-lang.com/documentation/syntax)**
 
+
+## 🌏 Como Iniciar o projeto
+
+- **[git clone https://github.com/JcscJosecarlossilvacoelho/Nlw-MoveIt.git]**
+- **[yarn install]**
+- **[yarn dev]**
+
 ## 🖊️ Licença
 
 O projeto é licenciado sobre a "MIT License" - Veja a pagina LICENÇA para mais destalhes.
