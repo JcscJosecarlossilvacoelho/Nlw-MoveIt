@@ -9,14 +9,16 @@ export const Container = styled.div`
     display:grid;
     grid-template-columns: 1fr 1fr;
     align-content:center;
-   
+    & > img{
+                 height: 100vh;
+          }
     & > div {
         display:flex;
         flex-direction:column;
         justify-content:center;
         & > img{
                  height: 4rem;
-                 width:15rem;
+                 width:1rem;
           }
         h2{
             font-size:2.25rem;
