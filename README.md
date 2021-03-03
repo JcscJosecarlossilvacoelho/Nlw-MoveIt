@@ -9,7 +9,7 @@
  <a href="#-license">Licença</a>
 </p>
 
-<img src="./assets/dev-readme.png" />
+
 
 ## 💻 Sobre
 
